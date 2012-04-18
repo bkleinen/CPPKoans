@@ -19,7 +19,7 @@ void aboutIfStatement() {
 	} else {
 		result = 2;
 	}
-	expectThat("the if statement is just as in Java", 1, result);
+	expectThat("the if statement is just as in Java", _____, result);
 }
 void aboutIntegersTreatedAsBoolean() {
 	int a = 5;
@@ -28,7 +28,7 @@ void aboutIntegersTreatedAsBoolean() {
 	if (a = b) {
 		actual = true;
 	}
-	expectThat("integers are treated as boolean!", true, actual);
+	expectThat("integers are treated as boolean!", ________, actual);
 }
 
 void aboutWhileLoop() {
@@ -38,8 +38,7 @@ void aboutWhileLoop() {
 		count++;
 		++j;
 	}
-	expectThat("the while loop should have been run 100 times", 100,
-			count);
+	expectThat("the while loop should have been run 100 times", _____, count);
 }
 void aboutForLoop() {
 	int count = 0;
@@ -47,8 +46,7 @@ void aboutForLoop() {
 		count++;
 	}
 
-	expectThat("the for loop should have been run 100 times", 100,
-			count);
+	expectThat("the for loop should have been run 100 times", _____, count);
 }
 void aboutSwitchStatement() {
 	const double cm_per_inch = 2.54;
@@ -66,7 +64,7 @@ void aboutSwitchStatement() {
 		result = -1;
 		break;
 	}
-	expectThat("it should have computed inch to cm", 2.54, result);
+	expectThat("it should have computed inch to cm", ______, result);
 }
 void AboutControlStructures::meditate() {
 	aboutIfStatement();

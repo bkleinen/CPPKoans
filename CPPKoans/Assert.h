@@ -43,7 +43,10 @@ template <class T,class U>
 void expectThat (string message, T expected, U actual) {
 	expectThatRaw(message+" (expected was casted to "+typeid(U).name()+")",U(expected),actual);
 }
-
+/*
+void expectThat(string message,int expected, string actual){
+	cout << "honeypot";
+}*/
 template <class T>
 void expectThatNot (string message, T expected, T actual) {
 	expectThatNotRaw(message,expected,actual);

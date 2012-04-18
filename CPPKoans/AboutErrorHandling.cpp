@@ -35,7 +35,7 @@ void aboutThrowingSomething() {
 		result = 2;
 	}
 
-	expectThat("arbitrary classes can be thrown", 2, result);
+	expectThat("arbitrary classes can be thrown", _____, result);
 }
 
 void AboutErrorHandling::meditate() {

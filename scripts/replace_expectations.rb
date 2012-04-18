@@ -1,4 +1,11 @@
-require './replacer'
+puts File.realpath(__FILE__)
+require './scripts/replacer.rb'
+
+
+# this line has been replaced with int _ instead of string:
+#    expectThat("in fact, it's a pointer manipulation II",_______,string(s2+16));
+
+
 
 sourcedirname = "CPPKoans"
 

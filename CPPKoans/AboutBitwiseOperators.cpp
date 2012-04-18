@@ -8,29 +8,29 @@ void aboutShiftOperators(){
 	// 1 looks like this: 0000000000000001
 	// now we can shift the set bit around
 	unsigned short value = unsigned_one << 5;
-	expectThat("shifting to the left is like multiplying with 2^n",32,value);
+	expectThat("shifting to the left is like multiplying with 2^n",_____,value);
 	value = value >> 1;
-	expectThat("shifting to the right divides by two",16,value);
+	expectThat("shifting to the right divides by two",_____,value);
 	value = value << 12;
-	expectThat("careful though if out of bounds",0,value);
+	expectThat("careful though if out of bounds",_____,value);
 	short signed_value = one << 15;
-	expectThat("and with the sign",-32768,signed_value);
+	expectThat("and with the sign",_____,signed_value);
 	
 	unsigned unsigned_integer = 1 << 15;
-	expectThat("1 shifted 15 to the left is...",32768,unsigned_integer);
+	expectThat("1 shifted 15 to the left is...",_____,unsigned_integer);
 	short signed_short = short(unsigned_integer);
 	expectThatRaw("and keep in mind things can happen when numbers are casted",short(-32768),signed_short);
 }
 void aboutOperators(){
-	expectThat("| bitwise or",16,0|16);
-	expectThat("& bitwise and",1,255&1);
+	expectThat("| bitwise or",_____,0|16);
+	expectThat("& bitwise and",_____,255&1);
 	
 	unsigned fifthbitset = 1<<5;
-	expectThat("| can be used to set the nth bit",32,0|fifthbitset);
-	expectThat("& can be used to determine if the 5th bit is set like so",true,((255>>5)&1 == 1));
+	expectThat("| can be used to set the nth bit",_____,0|fifthbitset);
+	expectThat("& can be used to determine if the 5th bit is set like so",________,((255>>5)&1 == 1));
 
-	expectThat("^ bitwise XOR",6,3^5);
-	expectThat("~ bitwise negation",-4,~3);
+	expectThat("^ bitwise XOR",_____,3^5);
+	expectThat("~ bitwise negation",_____,~3);
 }
 void AboutBitwiseOperators::meditate()
 {

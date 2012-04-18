@@ -22,8 +22,8 @@ void someFunction1(int x, int y){
 void aboutPassingByValue(){
 	int a = 4711, b = 13;
 	someFunction1(a,b);
-	expectThat("if parameters are passed by value, ...",4711,a);
-	expectThat("they are not changed in the outside context",13,b);
+	expectThat("if parameters are passed by value, ...",_____,a);
+	expectThat("they are not changed in the outside context",_____,b);
 }
 // pass by reference: just add a &
 void someFunction2(int x, int &y){
@@ -33,8 +33,8 @@ void someFunction2(int x, int &y){
 void aboutPassingByReference(){
 	int a = 4711, b = 13;
 	someFunction2(a,b);
-	expectThat("if parameters are passed by reference, ...",4711,a);
-	expectThat("they *are* changed in the outside context",14,b);
+	expectThat("if parameters are passed by reference, ...",_____,a);
+	expectThat("they *are* changed in the outside context",_____,b);
 }
 
 

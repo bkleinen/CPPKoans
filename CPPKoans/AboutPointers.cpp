@@ -11,7 +11,7 @@
 void aboutPointers(){
 	int i = 5;
 	int *i_pointer = &i;
-	expectThat("pointers contain memory addresses - they are a reference to the variable",5,*i_pointer);
+	expectThat("pointers contain memory addresses - they are a reference to the variable",_____,*i_pointer);
 }
 void AboutPointers::meditate(){
 	aboutPointers();
