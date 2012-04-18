@@ -17,5 +17,6 @@
 *.pdb
 Debug/
 Release/
+ipch/
 
 
