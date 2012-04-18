@@ -1,3 +1,7 @@
+
+# this line has been replaced with int _ instead of string:
+#    expectThat("in fact, it's a pointer manipulation II",_______,string(s2+16));
+
 require './replacer'
 
 sourcedirname = "CPPKoans"
