@@ -27,7 +27,7 @@ void aboutOperators(){
 	
 	unsigned fifthbitset = 1<<5;
 	expectThat("| can be used to set the nth bit",_____,0|fifthbitset);
-	expectThat("& can be used to determine if the 5th bit is set like so",________,((255>>5)&1 == 1));
+	expectThat("& can be used to determine if the 5th bit is set like so",________,(((255>>5)&1) == 1));
 
 	expectThat("^ bitwise XOR",_____,3^5);
 	expectThat("~ bitwise negation",_____,~3);
