@@ -25,7 +25,7 @@ void aboutIntegersTreatedAsBoolean() {
 	int a = 5;
 	int b = 6;
 	bool actual = false;
-	if (a = b) {
+	if (a == b) {
 		actual = true;
 	}
 	expectThat("integers are treated as boolean!", ________, actual);
